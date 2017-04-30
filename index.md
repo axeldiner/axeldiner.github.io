@@ -60,11 +60,11 @@ Stage opérationnel au sein du service propriété intellectuelle d'Airbus Helic
 Emploi étudiant au sein du pôle conformité du siège social PACA de la BNP Paribas : mission de contrôle des différentes ouvertures de compte effectuées en région PACA, accompagnée d'une prise de contact avec les commerciaux en cas de manquement aux règles de procédure.
 
 ### Scp Vidaparm - Pellier - Arnaud & Mouren
-#### _Stage opérationnel• Juillet 2014 - Août 2014_
+#### _Stage opérationnel • Juillet 2014 - Août 2014_
 Stage opérationnel au sein du cabinet d'avocat VIDAPARM sous la direction de Me Mouren Mireille, avocate au barreau de Marseille (rédaction de projet de conclusion, résumé de dossier pour présentation, rédaction de correspondance, recherche et veille juridique, présence lors d’audiences, rencontre avec clients).
 
 ### Financo
-#### _Emploi Étudiant• Juillet 2012 - Août 2012_
+#### _Emploi Étudiant • Juillet 2012 - Août 2012_
 Emploi étudiant au sein du pôle recouvrement/contentieux du siège social de la société de crédit Financo : mission de contrôle des dossiers de surrendettement, prise de contact avec les clients, recherche de solutions et éventuellement création d'un dossier, avant ouverture d'une procédure, en partenariat avec le pôle juridique et les avocats partenaires.
 <a id="Compétences"></a>
 ## Compétences 
