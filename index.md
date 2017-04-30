@@ -1,7 +1,8 @@
 
 ## Bienvenue
-
-
+[Education](#Education) 
+[Emploi](#Emploi) 
+[Compétences](#Compétences) 
 ## A propos
 
 Enfant, j'avais prévu de devenir un super héros, mais faute de supers pouvoirs ou d'héritage à la Wayne, aujourd'hui je fais du droit, pour protéger les intérêts des gentils!
@@ -16,7 +17,7 @@ Enfant, j'avais prévu de devenir un super héros, mais faute de supers pouvoirs
     +33752628225
   <axel.diner@gmail.com>
 
-## Education
+## Education <a id="Education"></a>
 
 ### Université de Versailles Saint Quentin en Yvelines
 #### _Institut d'Etudes Judiciaires • 2016-2017_
@@ -40,7 +41,7 @@ Cours et examens en Anglais.
 
 ---
 
-## Emploi
+## Emploi <a id="Emploi"></a>
 ### Fidal
 #### _Stage opérationnel • Avril 2017 - En cours_
 Stage opérationnel au sein du service règlement des contentieux, sous la direction de Me Saoudi. Recherche en matière de droit des sociétés, droit des contrats, droit des affaires. Rédaction d'assignations et de conclusions pour les contentieux en cours.
@@ -66,7 +67,7 @@ Stage opérationnel au sein du cabinet d'avocat VIDAPARM sous la direction de Me
 #### _Emploi Étudiant• Juillet 2012 - Août 2012_
 Emploi étudiant au sein du pôle recouvrement/contentieux du siège social de la société de crédit Financo : mission de contrôle des dossiers de surrendettement, prise de contact avec les clients, recherche de solutions et éventuellement création d'un dossier, avant ouverture d'une procédure, en partenariat avec le pôle juridique et les avocats partenaires.
 
-## Compétences
+## Compétences <a id="Compétences"></a>
 - Propriété Intellectuelle et NTIC
 - Libertés fondamentales et droit des données personnelles
 - Droit des instruments de paiement
@@ -85,34 +86,3 @@ Emploi étudiant au sein du pôle recouvrement/contentieux du siège social de l
 - Droit patrimonial
 - Contrats d’affaires dans l’univers digital (B2B)
 - Droit des entreprises en difficulté
-
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/axeldiner/axeldiner/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
