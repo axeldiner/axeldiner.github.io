@@ -10,10 +10,10 @@ Enfant, j'avais prévu de devenir un super héros, mais faute de supers pouvoirs
 
 ## Informations
 
-  Axel Diner
-  8 Domaine des oliviers
-  13015 MARSEILLE
-  +33752628225
+    Axel Diner
+    8 Domaine des oliviers
+    13015 MARSEILLE
+    +33752628225
   <axel.diner@gmail.com>
 
 ## Education
