@@ -16,8 +16,8 @@ Enfant, j'avais prévu de devenir un super héros, mais faute de supers pouvoirs
     13015 MARSEILLE
     +33752628225
   <axel.diner@gmail.com>
-
-## Education <a id="Education"></a>
+<a id="Education"></a>
+## Education 
 
 ### Université de Versailles Saint Quentin en Yvelines
 #### _Institut d'Etudes Judiciaires • 2016-2017_
@@ -39,9 +39,9 @@ Troisème année de Licence de Droit effectuée au sein de l'Université de Shef
 Étude des matières fondamentales du droit de common law et de droit international. 
 Cours et examens en Anglais.
 
----
 
-## Emploi <a id="Emploi"></a>
+ <a id="Emploi"></a>
+## Emploi
 ### Fidal
 #### _Stage opérationnel • Avril 2017 - En cours_
 Stage opérationnel au sein du service règlement des contentieux, sous la direction de Me Saoudi. Recherche en matière de droit des sociétés, droit des contrats, droit des affaires. Rédaction d'assignations et de conclusions pour les contentieux en cours.
@@ -66,8 +66,8 @@ Stage opérationnel au sein du cabinet d'avocat VIDAPARM sous la direction de Me
 ### Financo
 #### _Emploi Étudiant• Juillet 2012 - Août 2012_
 Emploi étudiant au sein du pôle recouvrement/contentieux du siège social de la société de crédit Financo : mission de contrôle des dossiers de surrendettement, prise de contact avec les clients, recherche de solutions et éventuellement création d'un dossier, avant ouverture d'une procédure, en partenariat avec le pôle juridique et les avocats partenaires.
-
-## Compétences <a id="Compétences"></a>
+<a id="Compétences"></a>
+## Compétences 
 - Propriété Intellectuelle et NTIC
 - Libertés fondamentales et droit des données personnelles
 - Droit des instruments de paiement
