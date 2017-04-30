@@ -1,16 +1,18 @@
+---
 ## Bienvenue
+---
 
 You can use the [editor on GitHub](https://github.com/axeldiner/axeldiner/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### A propos
-
+---
 Enfant, j'avais prévu de devenir un super héros, mais faute de supers pouvoirs ou d'héritage à la Wayne, aujourd'hui je fais du droit, pour protéger les intérêts des gentils!
 Étant un peu geek sur les bords, j'ai décidé de faire du droit des nouvelles technologies, et aujourd'hui, je suis à la recherche de la prochaine entreprise qui m'acceptera dans ses rangs en tant que juriste!
 
 ## Education
-
+---
 ### Université de Versailles Saint Quentin en Yvelines
 
 
@@ -24,6 +26,7 @@ Rédaction d'un mémoire [Les plateformes de streaming, qualification et régime
 Étude des matières fondamentales de droit privé et de sciences criminelles telles que le droit patrimonial, le droit international privé, le droit pénal spécial, le droit pénal des affaires, mais aussi des matières plus spécifiques telles que le droit des instruments de paiement ou le droit de la consommation. 
 Rédaction d'un rapport de recherche [Les contrats électroniques et les règles de conflits de loi](file:///home/axel/Dropbox/Public/Rapport.pdf) sous la direction du Professeur Barrière-Brousse.
 
+---
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
