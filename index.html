@@ -1,489 +1,161 @@
+
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="fr"> <!--<![endif]-->
+<html lang="fr">
+
 <head>
+    <meta charset="UTF-8">
+    <title>Diner Axel</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            max-width: 800px;
+            font-family: serif;
+            margin: auto;
+            padding: 0px;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        h1 {
+            font-size: 4em;
+            color: #02B875;
+            font-weight: normal;
+            font-style: italic;
+        }
+        h2 {
+            font-weight: normal;
+            font-style: italic;
+        }
+        p {
+            max-width: 600px;
+        }
+        .slide {
+            clear: both;
+        }
+        .slide-full {
+            height: 100vh;
+            margin:0;
+        }
+        .vcwrapper {
+            display: table;
+        }
+        .under {
+            text-decoration: underline;
+        }
+        #mast {
+            color: white;
+            line-height: 1.2;
+        }
+        #mast a {
+            color: white;
+        }
+        .sub {
+            color: #ddd;
+            font-style: italic;
+        }
+        .arrow {
+            font-variant-position: sub;
+            font-size: .6em;
+        }
+        .arrow:before {
+            content: "\0025BC";
+        }
+        .copy .header {
+            float: left;
+            min-width: 150px;
+            color: black;
+            vertical-align: top;
+            margin: 0px 20px 20px 0px;
+            padding: 0px;
+            text-align: right;
+        }
+        .copy .right {
+            overflow: hidden;
+            padding: 0px;
+            margin: 30px;
+        }
+        .right p {
+            margin: 2px;
+        }
+        .copy .header h2 {
+            padding: 0px;
+            margin: 0px;
+        }
+        /*gross vertical centering hack. I can't wait for FlexBox support to be more common!*/
+        table {
+            border-spacing: 5px;
+            border-collapse: collapse;
+        }
+        tr:last-child td {
+            border: none;
+        }
+        td {
+            padding: 10px 10px 10px 0px;
+            /*            border-bottom: 1px solid black;*/
+        }
+        .ld {
+            text-align: right;
+        }
+    </style>
+    <script>
+        var x;
+        var mast;
 
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>Diner Axel - CV en ligne</title>
-	<meta name="description" content="Site internet personnel.">
-	<meta name="author" content="Diner Axel">
-
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
-
+        function bgColor() {
+            var p = ((window.innerHeight - window.scrollY) / window.innerHeight); //calulate ratio of scroll
+            x.innerHTML = " " + String(parseInt(p * 100)); //display it
+            var rgb = Math.floor(Math.abs(1 - p) * 255); //set the color
+            var colorString = "rgb(" + rgb + "," + rgb + "," + rgb + ")";
+            document.body.style.backgroundColor = colorString;
+        }
+    </script>
 </head>
-
 <body>
-
-   <!-- Header
-   ================================================== -->
-   <header id="home">
-
-      <nav id="nav-wrap">
-
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">A propos</a></li>
-	         <li><a class="smoothscroll" href="#resume">Education</a></li>
-            <li><a class="smoothscroll" href="#work">Emploi</a></li>
-            <li><a class="smoothscroll" href="#competences">Compétences</a></li>
-            <li><a class="smoothscroll" href="#langues">Langues</a></li>
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
-
-      <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">Axel Diner</h1>
-            <h3>Étudiant en <span>droit des nouvelles technologies</span>, je souhaite devenir <span>juriste en entreprise</span>
-            et dans cette optique, je suis à la recherche d'un stage.<br>
-            Faites un petit tour sur le site pour en découvrir plus <a class="smoothscroll" href="#about">sur moi</a>.</h3>
-            <hr />
-            <ul class="social">
-               <li id="face"><a href="http://www.facebook.com/axel.diner" target="facebook"><i class="fa fa-facebook"></i></a></li>
-               <li id="twi"><a href="http://twitter.com/axelDiner" target="twitter"><i class="fa fa-twitter"></i></a></li>
-               <li id="go"><a href="http://google.com/+AxelDiner" target="google+"><i class="fa fa-google-plus"></i></a></li>
-               <li id="link"><a href="http://fr.linkedin.com/in/dineraxel" target="linkedin"><i class="fa fa-linkedin"></i></a></li>
-               <li id="insta"><a href="http://www.instagram.com/axeldiner" target="instagram"><i class="fa fa-instagram"></i></a></li>
-               <li id="mail"><a href="mailto:?to=axel.diner@gmail.com &subject=Prise de Contact"><i class="fa fa-envelope"></i></a></li>
-            </ul>
-         </div>
-      </div>
-
-      <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-      </p>
-
-   </header> <!-- Header End -->
-
-
-   <!-- About Section
-   ================================================== -->
-   <section id="about">
-
-      <div class="row">
-
-         <div class="three columns">
-
-            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
-
-         </div>
-
-         <div class="nine columns main-col">
-
-            <h2>À propos</h2>
-
-            <p>Enfant, j'avais prévu de devenir un super héros, mais faute de supers pouvoirs ou d'héritage à la Wayne, aujourd'hui je fais du droit,
-               pour protéger les intérêts des gentils!<br>
-               Étant un peu geek sur les bords, j'ai décidé de faire du droit des nouvelles technologies, et aujourd'hui, je suis à la recherche de la
-               prochaine entreprise qui m'acceptera dans ses rangs en tant que juriste!
-            </p>
-
-            <div class="row">
-
-               <div class="columns contact-details">
-
-                  <h2>Informations</h2>
-                  <p class="address">
-						   <span>Axel Diner</span><br>
-						   <span>8 Domaine des oliviers<br>
-						         13015 MARSEILLE
-                     </span><br>
-						   <span>+33752628225</span><br>
-                     <span>axel.diner@gmail.com</span>
-					   </p>
-
-               </div>
-
-               <div class="columns download">
-                  <p>
-                     <a href="CV.pdf" class="button"><i class="fa fa-download"></i>Télécharger le CV au format PDF</a>
-                  </p>
-               </div>
-
-            </div> <!-- end row -->
-
-         </div> <!-- end .main-col -->
-
-      </div>
-
-   </section> <!-- About Section End-->
-
-
-   <!-- Resume Section
-   ================================================== -->
-   <section id="resume">
-
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row education">
-
-         <div class="three columns header-col">
-            <h1><span>Education</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-           <div class="row item">
-
-              <div class="twelve columns">
-
-                 <h3>Université de Versailles Saint Quentin en Yvelines</h3>
-                 <p class="info">Institut d'études judiciaires<span>&bull;</span> <em class="date">2015-2016</em></p>
-
-                 <p>
-                   Préparation à l'examen du barreau.
-                 </p>
-
-              </div>
-
-           </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Université de Versailles Saint Quentin en Yvelines</h3>
-                  <p class="info">Master 2 Propriété Intellectuelle et Droit des Affaires Numériques <span>&bull;</span> <em class="date">2015-2016</em></p>
-
-                  <p>
-                  Le master 2 Propriété Intellectuelle et Droit des Affaires Numériques s'inscrit dans l'offre des masters de Saclay en
-                  Propriété Intellectuelle, Droit du Numérique, Droit International et Droit européen. Sa spécificité tient à une approche
-                  généraliste et transversale du droit confronté aux défis de la dématérialisation et du numérique.<br>
-									Rédaction d'un mémoire <a href="streaming.pdf"><font color="#f06000"><u>Les plateformes de streaming, qualification et régime de responsabilité applicables</u></font></a> sous la direction
-										de Maitre Ronan Hardouin.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Aix-Marseille Université</h3>
-                  <p class="info">Master 1 Droit Privé et Sciences Criminelles <span>&bull;</span> <em class="date">2014-2015</em></p>
-
-                  <p>
-                    Étude des matières fondamentales de droit privé et de sciences criminelles telles que le droit patrimonial,
-                    le droit international privé, le droit pénal spécial, le droit pénal des affaires, mais aussi des matières
-                    plus spécifiques telles que le droit des instruments de paiement ou le droit de la consommation. <br>
-										Rédaction d'un rapport de recherche <a href="Rapport.pdf"><font color="#f06000"><u>Les contrats électroniques et les règles de conflits de loi</u></font></a> sous la
-										direction du Professeur Barrière-Brousse.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Sheffield University : School of Law</h3>
-                  <p class="info">Licence 3 - Erasmus <span>&bull;</span> <em class="date">2013-2014</em></p>
-
-                  <p>
-                  Troisème année de Licence de Droit effectuée au sein de l'Université de Sheffield (Royaume-Uni) dans le cadre du programme Erasmus.<br>
-                  Étude des matières fondamentales du droit de common law et de droit international. <br>
-                  Cours et examens en Anglais.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-      </section> <!-- Resume Section End-->
-
-
-<section id="work" style="padding-bottom: 0px;">
-
-      <!-- Work ----------------------------------------------- -->
-      <div class="row work" style="margin-bottom: 0px;">
-
-         <div class="three columns header-col">
-            <h1><span>emploi</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-           <div class="row item">
-
-              <div class="twelve columns">
-
-                 <h3>FIDAL</h3>
-                 <p class="info">Stage opérationnel <span>&bull;</span> <em class="date">Avril 2017 - En cours</em></p>
-
-                 <p>
-                   Stage opérationnel au sein du service règlement des contentieux, sous la direction de Me Saoudi. Recherche en matière de droit des sociétés, droit des contrats, droit des affaires.
-                   Rédaction d'assignations et de conclusions pour les contentieux en cours.
-                 </p>
-
-              </div>
-
-           </div> <!-- item end -->
-
-           <div class="row item">
-
-              <div class="twelve columns">
-
-                 <h3>LESBROS AVOCATS</h3>
-                 <p class="info">Stage opérationnel <span>&bull;</span> <em class="date">Février 2017 - Avril 2017</em></p>
-
-                 <p>
-                   Stage opérationnel au sein du cabinet de Me LESBROS, spécialisé en droit de la propriété intellectuelle et en droit des affaires numériques.<br>
-                   Rédaction de contrats de prestations informatiques et de partenariat. Dépôt de marques
-                   européennes, déclarations auprès de la CNIL de traitements de données personnelles. Recherche
-                   et veille juridique. Rédaction de consultations pour les différentes sociétés clientes du cabinet.
-                   Rédaction <a href="http://www.lesbros-avocats.com/donnees-personnelles-ce-qui-change-avec-la-loi-pour-une-republique-numerique/"><font color="#f06000"><u>d'articles d'actualité et d'analyse</u></font></a> pour le site internet du cabinet.
-                 </p>
-
-              </div>
-
-           </div> <!-- item end -->
-
-           <div class="row item">
-
-              <div class="twelve columns">
-
-                 <h3>AIRBUS HELICOPTERS</h3>
-                 <p class="info">Stage opérationnel <span>&bull;</span> <em class="date">Juin 2016 - Décembre 2016</em></p>
-
-                 <p>
-                   Stage opérationnel au sein du service propriété intellectuelle d'Airbus Helicopters : Étude, classement et
-                   rédaction de clauses de confidentialité et de propriété intellectuelle en anglais
-                   et en français. Rédaction et mise en place d’un audit visant à vérifier l’application des règles de
-                   confidentialité au sein des différents services du groupe. Participation à la négociation et la
-                   rédaction de différents types de contrats avec différents types d’acteurs (privé/public).
-                 </p>
-
-              </div>
-
-           </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>BNP PARIBAS</h3>
-                  <p class="info">Emploi étudiant <span>&bull;</span> <em class="date">Août 2015 - Septembre 2015</em></p>
-
-                  <p>
-                    Emploi étudiant au sein du pôle conformité du siège social PACA de la BNP Paribas : mission de contrôle des
-                    différentes ouvertures de compte effectuées en région PACA, accompagnée d'une prise de contact avec les commerciaux
-                    en cas de manquement aux règles de procédure.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>SCP VIDAPARM - PELLIER - ARNAUD & MOUREN</h3>
-                  <p class="info">Stage opérationnel<span>&bull;</span> <em class="date">Juillet 2014 - Août 2014</em></p>
-
-                  <p>
-                    Stage opérationnel au sein du cabinet d'avocat VIDAPARM sous la direction de Me Mouren Mireille,
-                    avocate au barreau de Marseille (rédaction de projet de conclusion, résumé de dossier pour présentation,
-                    rédaction de correspondance, recherche et veille juridique, présence lors d’audiences, rencontre avec clients).
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>FINANCO</h3>
-                  <p class="info">Emploi Étudiant<span>&bull;</span> <em class="date">Juillet 2012 - Août 2012</em></p>
-
-                  <p>
-                    Emploi étudiant au sein du pôle recouvrement/contentieux du siège social de la société de crédit Financo :
-                    mission de contrôle des dossiers de surrendettement, prise de contact avec les clients, recherche de solutions et
-                    éventuellement création d'un dossier, avant ouverture d'une procédure, en partenariat avec le pôle juridique et
-                    les avocats partenaires.
-
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-      </section>
-
-
-<section id="competences">
-
-    <div class="row education" style="margin-bottom : 0px"
-
-      <!-- Skills
-      ----------------------------------------------- -->
-
-
-     <div class="row skill" style="padding-left: 40px">
-
-     <div class="three columns header-col">
-        <h1><span>compétences</span></h1>
-     </div>
-
-     <div class="nine columns main-col">
-
-     <div class="row">
-
-        <div class="twelve columns">
-           <h3 class="half-bottom"><br></h3>
+    <div class="slide slide-full vcwrapper" id="mast">
+        <!--Gross markup to facilitate vertical centering-->
+        <div style="display:table-row;height:100%;">
+            <!--ewwww tables-->
+            <div style="display:table-cell;vertical-align:middle;">
+                <div>
+                    <h1><b>Diner Axel</b></h1>
+                    <h2 id="tagline">Juriste Propriété intellectuelle / Droit des affaires / NTIC</h2>
+                    <p>Stagiaire - Juriste, <span class="sub">Fidal Marseille</span></p>
+                    <p>Master 2 Propritété intellectuelle - Droit des affaires numériques, <span class="sub">UVSQ</span></p>
+                    <p><a href="mailto:axel.diner@gmail.com">axel.diner@gmail.com</a> / 07.52.62.82.25</p>
+                    <a href="https://www.linkedin.com/in/axeldiner/">LinkedIn</a> / <a href="XXXX.pdf">CV [pdf]</a> / <a href="https://www.linkedin.com/in/axeldiner/">Blog</a></p>
+                    <p></p>
+                </div>
+            </div>
         </div>
+      <h2>More coming soon <span id="db" class="arrow"></span></h2>
+    </div>
+<!--super secret code hidden from public web!-->
+    <script>
+        x = document.getElementById("db");
+        mast = document.getElementById("mast");
+        style = window.getComputedStyle(mast);
+        var color = style.getPropertyValue('color');
+        if (color == "rgb(255, 255, 255)") { //we should check that the stylesheet is being applied to avoid making the entire page unreadable
+            bgColor();
+            document.addEventListener("scroll", bgColor);
+        }
+    </script>
+<!---  <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-     </div> <!-- Row End-->
-
-     <!--<h4>1/3 Columns</h4>  -->
-
-     <div class="row">
-
-        <div class="four columns">
-             <list>
-              <li>Propriété Intellectuelle et NTIC</li>
-              <li>Libertés fondamentales et droit des données personnelles</li>
-              <li>Droit des instruments de paiement</li>
-              <li>Droit du travail et Nouvelles technologies</li>
-              <li>Droit de la consommation</li>
-              <li>Droit pénal spécial</li>
-             </list>
-         </div>
-
-        <div class="four columns">
-             <list>
-              <li>Contrats spéciaux des NTIC et de la PI</li>
-              <li>Cybercriminalité</li>
-              <li>Droit de la concurrence et innovation</li>
-              <li>International and European IP Law</li>
-              <li>Flux financiers dématérialisés</li>
-              <li>Responsabilité des intermédiaires techniques</li>
-             </list>
-         </div>
-
-        <div class="four columns">
-            <list>
-             <li>Droit international Privé</li>
-             <li>Droit des successions</li>
-             <li>Droit pénal international</li>
-             <li>Droit patrimonial</li>
-             <li>Contrats d’affaires dans l’univers digital (B2B)</li>
-             <li>Droit des entreprises en difficulté</li>
-            </list>
-         </div>
-     </div>
-
-     <div class="row">
-
-     </div> <!-- Row End-->
-     </div>
-     </section>
-
-
-     <section id="langues">
-      <div class="row skill">
-
-         <div class="three columns header-col">
-            <h1><span>langues</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-				<div class="bars">
-
-				   <ul class="skills">
-					   <li><span class="bar-expand photoshop"></span><em>Français</em></li>
-                        <li><span class="bar-expand illustrator"></span><em>Anglais</em></li>
-						<li><span class="bar-expand wordpress"></span><em>Espagnol</em></li>
-					</ul>
-
-				</div><!-- end skill-bars -->
-
-			</div> <!-- main-col end -->
-
-      </div> <!-- End skills -->
-     </section>
-
-   </section> <!-- Resume Section End-->
-
-
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-         <div class="twelve columns">
-
-            <ul class="social-links">
-               <li id="face"><a href="http://www.facebook.com/axel.diner" target="facebook"><i class="fa fa-facebook"></i></a></li>
-               <li id="twi"><a href="http://twitter.com/axelDiner" target="twitter"><i class="fa fa-twitter"></i></a></li>
-               <li id="go"><a href="http://google.com/+AxelDiner" target="google+"><i class="fa fa-google-plus"></i></a></li>
-               <li id="link"><a href="http://fr.linkedin.com/in/dineraxel" target="linkedin"><i class="fa fa-linkedin"></i></a></li>
-               <li id="insta"><a href="http://www.instagram.com/axeldiner" target="instagram"><i class="fa fa-instagram"></i></a></li>
-               <li id="mail"><a href="mailto:?to=axel.diner@gmail.com &subject=Prise de Contact"><i class="fa fa-envelope"></i></a></li>
-            </ul>
-
-            <ul class="copyright">
-               <li>&copy; Copyright 2014 CeeVee</li>
-               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
-            </ul>
-
-         </div>
-
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
-      </div>
-
-   </footer> <!-- Footer End-->
-
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
-
+        ga('create', 'UA-34100225-1', 'auto');
+        ga('send', 'pageview');
+    </script> -->
 </body>
 
 </html>
