@@ -8,8 +8,8 @@
     <!--<link rel="stylesheet" href="style.css">-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-      html{
-        height: 100vh;
+        html{
+          height: 100%;
         }
         body {
             background-color:#f6f7fe;
@@ -18,7 +18,6 @@
             padding: 0px;
             font-size: 1em;
             line-height: 1.6;
-            height: 100vh;
             position: absolute;
             top: 0;
             left: 0;
@@ -41,6 +40,7 @@
 
 .bob {
     max-width: 800px;
+    max-height:90vh;
     margin: auto;
     margin-bottom: none;
     padding-bottom: none;
@@ -50,7 +50,7 @@
             clear: both;
         }
         .slide-full {
-            height: 100vh;
+            height: 90vh;
             margin:0;
         }
         .vcwrapper {
@@ -63,6 +63,8 @@
             color: white;
             line-height: 1.2;
             margin-left: 10px;
+            margin-top: 0;
+            padding-top :0;
         }
         #mast a {
             color: black;
@@ -86,23 +88,10 @@
         .arrow:before {
             content: "\0025BC";
         }
-        .copy .header {
-            float: left;
-            min-width: 150px;
-            color: black;
-            vertical-align: top;
-            margin: 0px 20px 20px 0px;
-            padding: 0px;
-            text-align: right;
-        }
-        .copy .right {
-            overflow: hidden;
-            padding: 0px;
-            margin: 30px;
-        }
+
          footer {
            position: relative;
-           height: 100px;
+           height: 10vh;
            overflow: hidden;
         }
 
