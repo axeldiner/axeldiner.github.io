@@ -89,6 +89,8 @@
            position: relative;
            height: 15vh;
            overflow: hidden;
+           animation: 1s ease-out 0s 1 slideInFromBottom;
+
         }
 
         .footer_bg {
@@ -133,6 +135,15 @@
           }
           100% {
             transform: translateX(0);
+          }
+        }
+
+        @keyframes slideInFromBottom {
+          0% {
+            transform: translateY(-100%);
+          }
+          100% {
+            transform: translateY(0);
           }
         }
 
