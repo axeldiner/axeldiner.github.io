@@ -131,9 +131,11 @@
         @keyframes slideInFromLeft {
           0% {
             transform: translateX(-100%);
+            transition: opacity 2s;
           }
           100% {
             transform: translateX(0);
+            opacity: 100%;
           }
         }
 
@@ -149,9 +151,18 @@
           }
         }
 
+        @keyframes Fadein {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+
         header {
           /* This section calls the slideInFromLeft animation we defined above */
-          animation: 1s ease-out 0s 1 slideInFromLeft;
+          animation: 1s ease-out 0s 1 slideInFromLeft, Fadein ease-out 1.5s;
         }
 
     </style>
