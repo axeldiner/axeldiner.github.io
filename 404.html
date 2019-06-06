@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>&#128187; Diner Axel &#128187;</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html{
+          height: 100%;
+        }
+        body {
+            background-color:#f6f7fe;
+            font-family: Zilla Slab,BlinkMacSystemFont,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+            margin: auto;
+            padding: 0px;
+            font-size: 1em;
+            line-height: 1.6;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+        h1 {
+            font-size: 4em;
+            color: #011627;
+            font-weight: normal;
+        }
+        h2 {
+            font-weight: normal;
+            color: #2ec4b6;
+        }
+        p {
+            max-width: 600px;
+            color: #667c93;
+        }
+        .bob {
+          max-width: 800px;
+          max-height:85vh;
+          margin: auto;
+          margin-bottom: none;
+          padding-bottom: none;
+        }
+        .slide {
+            clear: both;
+        }
+        .slide-full {
+            height: 85vh;
+            margin:0;
+        }
+        .vcwrapper {
+            display: table;
+        }
+        .under {
+            text-decoration: underline;
+        }
+        #mast {
+            color: white;
+            line-height: 1.2;
+            margin-left: 5%;
+            margin-top: 0;
+            padding-top :0;
+        }
+        #mast a {
+            color: #011627;
+            text-decoration: none;
+        }
+        #mast a:hover {
+          color: #ff9f1c;
+        }
+        .sub {
+          color: #011627;
+          font-style: italic;
+        }
+        .arrow {
+            font-variant-position: sub;
+            font-size: .6em;
+            background-color: yellow;
+        }
+
+        .arrow:before {
+            content: "\0025BC";
+        }
+
+         footer {
+           position: relative;
+           height: 15vh;
+           overflow: hidden;
+           animation: 1.5s ease-out 0s 1 slideInFromBottom;
+
+        }
+
+        .footer_bg {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: linear-gradient(#2ec4b6, #2ec4b6);
+          transform: skewY(-4deg);
+          transform-origin: bottom right;
+        }
+
+        .right p {
+            margin: 2px;
+        }
+        .copy .header h2 {
+            padding: 0px;
+            margin: 0px;
+        }
+        /*gross vertical centering hack. I can't wait for FlexBox support to be more common!*/
+        table {
+            border-spacing: 5px;
+            border-collapse: collapse;
+        }
+        tr:last-child td {
+            border: none;
+        }
+        td {
+            padding: 10px 10px 10px 0px;
+        }
+        .ld {
+            text-align: right;
+        }
+
+        @keyframes slideInFromLeft {
+          0% {
+            transform: translateX(-100%);
+            transition: opacity 2s;
+          }
+          100% {
+            transform: translateX(0);
+            opacity: 100%;
+          }
+        }
+
+        @keyframes slideInFromBottom {
+          0% {
+            transform: translateY(100%);
+          }
+          33% {
+            transform: translateY(100%);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes Fadein {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+
+        header {
+          /* This section calls the slideInFromLeft animation we defined above */
+          animation: 1s ease-out 0s 1 slideInFromLeft, Fadein ease-out 1.5s;
+        }
+
+    </style>
+</head>
+<body>
+<div class="bob">
+    <div class="slide slide-full vcwrapper" id="mast">
+        <!--Gross markup to facilitate vertical centering-->
+        <div style="display:table-row;height:100%;">
+            <!--ewwww tables-->
+            <div style="display:table-cell;vertical-align:middle;">
+                <header>
+                    <h1><b>Diner Axel<font color=#ff9f1c>.</></h1><!---<h1 class="point">.</h1></b>-->
+                    <h2 id="tagline"><i>Corporate & Governance Officer, <span class="sub"><a href="https://www.sgbt.lu/fr/">Société Générale Luxembourg</a></span></i></h2>
+                    <p>Droit bancaire / Droit des affaires / NTIC / Proprité Intellectuelle<p>
+                    <p>Master 2 Propritété intellectuelle - Droit des affaires numériques, <span class="sub"><a href="https://www.universite-paris-saclay.fr/fr/formation/master/m2-propriete-intellectuelle-droit-des-affaires-numeriques-pidan#presentation-m2">UVSQ</a></span></p>
+                    <p><a href="mailto:axel.diner@gmail.com">axel.diner@gmail.com</a> / <a href="tel:0033752628225">+33.7.52.62.82.25</a> </p>
+                    <a href="/axeldiner">Parcours</a> / <a href="https://www.linkedin.com/in/dineraxel/">LinkedIn</a> / <a href="https://twitter.com/axelDiner">Twitter</a> / <a href="CV.pdf">CV [pdf]</a></p>
+                </header>
+            </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_bg"></div>
+    <footer
+
+
+</body>
+
+</html>
