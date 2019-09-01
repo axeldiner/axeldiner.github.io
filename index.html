@@ -175,16 +175,17 @@
           top:0;
           right:0;
           margin-right: 7px;
-        	animation: text-focus-in 1s ease-in both;
+        	animation: text-focus-in 2s ease-in both;
         }
 
         @keyframes text-focus-in {
           0% {
-            filter: blur(12px);
+            opacity: 0;
+          }
+          40% {
             opacity: 0;
           }
           100% {
-            filter: blur(0px);
             opacity: 1;
           }
         }
