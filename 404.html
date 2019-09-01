@@ -71,6 +71,11 @@
         #mast a:hover {
           color: #ff9f1c;
         }
+
+        #langue a:hover {
+          color: #2ec4b6;
+        }
+
         .sub {
           color: #011627;
           font-style: italic;
@@ -89,6 +94,7 @@
            position: relative;
            height: 15vh;
            overflow: hidden;
+           animation: 1.5s ease-out 0s 1 slideInFromBottom;
 
         }
 
@@ -138,6 +144,52 @@
           }
         }
 
+        @keyframes slideInFromBottom {
+          0% {
+            transform: translateY(100%);
+          }
+          33% {
+            transform: translateY(100%);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes Fadein {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+
+        header {
+          /* This section calls the slideInFromLeft animation we defined above */
+          animation: 1s ease-out 0s 1 slideInFromLeft, Fadein ease-out 1.5s;
+        }
+
+        #langue {
+          position: absolute;
+          top:0;
+          right:0;
+          margin-right: 7px;
+        	animation: text-focus-in 2s ease-in both;
+        }
+
+        @keyframes text-focus-in {
+          0% {
+            opacity: 0;
+          }
+          40% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+
     </style>
 </head>
 <body>
@@ -147,6 +199,9 @@
         <div style="display:table-row;height:100%;">
             <!--ewwww tables-->
             <div style="display:table-cell;vertical-align:middle;">
+                <div id=langue>
+                  <p><a href="/indexen"><u>EN</u></a> / <font color=#ff9f1c>FR</></p>
+                </div>
                 <header>
                     <h1><b>Diner Axel<font color=#ff9f1c>.</></h1><!---<h1 class="point">.</h1></b>-->
                     <h2 id="tagline"><i>Corporate & Governance Officer, <span class="sub"><a href="https://www.sgbt.lu/fr/">Société Générale Luxembourg</a></span></i></h2>
